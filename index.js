@@ -1,13 +1,13 @@
 const ms=require("./mystrings")
 
-const str ="this is a test string. i'll look for test substrings in this string"
+const str ="this is a test string. i'll look for test substrings in this string. latlon 32.7336006165,-117.190002441 for KSAN"
 
 let srch = 
 {
   locate:
     [
-      [1,"look "],
-      [1," in"]
+      [1,"latlon "],
+      [1," for"]
     ],
   replace:
     [
