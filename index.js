@@ -14,8 +14,9 @@ let srch =
       ["",""]
     ]
 }
-
+console.log(str)
 console.log(srch.locate)
+console.log(srch.replace)
 let test=ms.FindBracketed(str,srch.locate,srch.replace);
 console.log(test)
-console.log(JSON.stringify(srch,null,2))
+//console.log(JSON.stringify(srch,null,2))
