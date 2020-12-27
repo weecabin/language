@@ -1,5 +1,6 @@
 //const ms=require("./mystrings")
-let str="a misc string to be used as a search target. I'll create search locate parameters tp extract substrings out of this string";
+let str="a misc string to be used as a search target. \n\
+Locate parameters (below) are used to extract substrings out of this string";
 
 let srch = 
 {
