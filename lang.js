@@ -29,7 +29,7 @@ function extract()
   //window.alert("Extract");
   let newsrch = JSON.parse(document.getElementById("params").value)
   let res = FindBracketed(str,newsrch.locate,newsrch.replace);
-  document.getElementById("res").innerHTML=res;
+  document.getElementById("res").value=res;
 }
 
 /*
