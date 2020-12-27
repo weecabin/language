@@ -3,6 +3,6 @@ const str="a misc string to be used as a search target. I'll create search locat
 
 function setup()
 {
-  alert("in setup")
+  window.alert("in setup");
   document.getElementById("srchstr").innerHTML=str;
 }
