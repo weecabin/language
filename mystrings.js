@@ -17,7 +17,7 @@ or in this case, the string between "the " and " will"
 */
 function FindBracketed(stringToSearch,locate,substitute)
 {
-  window.alert("in FindBracketed");
+  //window.alert("in FindBracketed");
   //console.log(locate)
   let sub = stringToSearch;
   let n = Occurence(locate[0][0], locate[0][1], sub);
@@ -38,7 +38,10 @@ function FindBracketed(stringToSearch,locate,substitute)
       {
         for (ri=0;ri< substitute.length;ri++)
         {
-          ret = ret.replace(substitute[ri][0], substitute[ri][1]);
+          let find= substitute[ri][0];
+          let repl= substitute[ri][1];
+          while(ret.indexOf(find)>=0)
+            ret = ret.replace(find,repl);
         }
       }
       return ret;

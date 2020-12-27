@@ -72,7 +72,10 @@ function FindBracketed(stringToSearch,locate,substitute)
       {
         for (ri=0;ri< substitute.length;ri++)
         {
-          ret = ret.replace(/substitute[ri][0]/g, substitute[ri][1]);
+          let find= substitute[ri][0];
+          let repl= substitute[ri][1];
+          while(ret.indexOf(find)>=0)
+            ret = ret.replace(find,repl);
         }
       }
       return ret;

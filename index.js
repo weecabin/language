@@ -6,7 +6,7 @@ let srch =
 {
   locate:
     [
-      [2,"test "],
+      [1,"look "],
       [1," in"]
     ],
   replace:
