@@ -26,8 +26,8 @@ function setup()
 function extract()
 {
   window.alert("Extract");
-  //let res = FindBracketed(srch.locate,srch.replace,str);
-  document.getElementById("res").innerHTML="testing";
+  let res = FindBracketed(srch.locate,srch.replace,str);
+  document.getElementById("res").innerHTML=res;
 }
 
 /*
@@ -49,7 +49,7 @@ or in this case, the string between "the " and " will"
 */
 function FindBracketed(stringToSearch,locate,substitute)
 {
-  window.alert("in FindBracketed");
+  window.alert("in FindBracketed "+stringToSearch);
   //console.log(locate)
   let sub = stringToSearch;
   let n = Occurence(locate[0][0], locate[0][1], sub);
