@@ -18,10 +18,14 @@ function setup()
 {
   //window.alert("in setup");
   document.getElementById("srchstr").innerHTML=str;
-  document.getElementById("params").innerHTML= "testing\nsecond line";//JSON.stringify(srch,null,2);
+  document.getElementById("params").innerHTML= 
+  //"testing\nsecond line";
+  JSON.stringify(srch,null,2);
 }
 
 function extract()
 {
-  
+  window.alert("Extract")
+  let res = FindBracketed(srch.locate,srch.replace,str);
+  document.getElementById("res").innerHTML=res;
 }
