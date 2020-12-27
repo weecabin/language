@@ -25,7 +25,7 @@ function setup()
 
 function extract()
 {
-  window.alert("Extract");
+  //window.alert("Extract");
   let newsrch = JSON.parse(document.getElementById("params").innerHTML)
   let res = FindBracketed(str,newsrch.locate,newsrch.replace);
   document.getElementById("res").innerHTML=res;
@@ -50,7 +50,7 @@ or in this case, the string between "the " and " will"
 */
 function FindBracketed(stringToSearch,locate,substitute)
 {
-  window.alert("in FindBracketed "+stringToSearch);
+  window.alert("in FindBracketed "+JSON.stringify(locate));
   //console.log(locate)
   let sub = stringToSearch;
   let n = Occurence(locate[0][0], locate[0][1], sub);
