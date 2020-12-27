@@ -51,7 +51,7 @@ or in this case, the string between "the " and " will"
 */
 function FindBracketed(stringToSearch,locate,substitute)
 {
-  window.alert("in FindBracketed "+JSON.stringify(locate));
+  //window.alert("in FindBracketed "+JSON.stringify(locate));
   //console.log(locate)
   let sub = stringToSearch;
   let n = Occurence(locate[0][0], locate[0][1], sub);
