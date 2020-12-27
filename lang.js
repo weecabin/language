@@ -26,8 +26,8 @@ function setup()
 function extract()
 {
   window.alert("Extract");
-  let res = FindBracketed(srch.locate,srch.replace,str);
-  document.getElementById("res").innerHTML=res;
+  //let res = FindBracketed(srch.locate,srch.replace,str);
+  document.getElementById("res").innerHTML="testing";
 }
 
 /*
