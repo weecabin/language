@@ -1,6 +1,6 @@
 const ms=require("./mystrings")
 
-let str ="this is a test string. i'll look for test substrings in this string"
+const str ="this is a test string. i'll look for test substrings in this string"
 
 let srch = 
 {
