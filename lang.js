@@ -18,7 +18,7 @@ function setup()
 {
   //window.alert("in setup");
   document.getElementById("srchstr").innerHTML=str;
-  document.getElementById("params").innerHTML=JSON.stringify(srch,null,2);
+  document.getElementById("params")."testing\nsecond line";//innerHTML=JSON.stringify(srch,null,2);
 }
 
 function extract()
