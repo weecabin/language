@@ -17,14 +17,14 @@ or in this case, the string between "the " and " will"
 */
 function FindBracketed(stringToSearch,locate,substitute)
 {
-  window.alert("in FindBracketed")
+  window.alert("in FindBracketed");
   //console.log(locate)
   let sub = stringToSearch;
   let n = Occurence(locate[0][0], locate[0][1], sub);
   if (n<0)return "";
-  sub = sub.substring(n)
+  sub = sub.substring(n);
   if (locate.length==1) return sub;
-  sub = sub.substring(locate[0][1].length)
+  sub = sub.substring(locate[0][1].length);
   //console.log("locate.lenght="+locate.length)
   for (let i=1;i<locate.length;i++)
   { 
@@ -38,12 +38,12 @@ function FindBracketed(stringToSearch,locate,substitute)
       {
         for (ri=0;ri< substitute.length;ri++)
         {
-          ret = ret.replace(substitute[ri][0], substitute[ri][1])
+          ret = ret.replace(substitute[ri][0], substitute[ri][1]);
         }
       }
       return ret;
     }
-    sub = sub.substring(n+ locate[i][1].length)
+    sub = sub.substring(n+ locate[i][1].length);
     //console.log(sub)
   }
   return sub;
@@ -64,7 +64,7 @@ function Occurence(count,searchstr,mainstr)
     else
     {
       //console.log("error");
-      return -1
+      return -1;
     }
     //console.log(offset);
     //console.log(mainstr.substring(offset)) 

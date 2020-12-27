@@ -1,5 +1,5 @@
 //const ms=require("./mystrings")
-const str="a misc string to be used as a search target. I'll create search locate parameters tp extract substrings out of this string";
+let str="a misc string to be used as a search target. I'll create search locate parameters tp extract substrings out of this string";
 
 let srch = 
 {
@@ -25,7 +25,7 @@ function setup()
 
 function extract()
 {
-  window.alert("Extract")
+  window.alert("Extract");
   let res = FindBracketed(srch.locate,srch.replace,str);
   document.getElementById("res").innerHTML=res;
 }
