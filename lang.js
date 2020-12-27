@@ -26,7 +26,8 @@ function setup()
 function extract()
 {
   window.alert("Extract");
-  let res = FindBracketed(str,srch.locate,srch.replace);
+  let newsrch = JSON.parse(document.getElementById("params").innerHTML)
+  let res = FindBracketed(str,newsrch.locate,newsrch.replace);
   document.getElementById("res").innerHTML=res;
 }
 
