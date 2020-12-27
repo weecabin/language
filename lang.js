@@ -18,7 +18,7 @@ function setup()
 {
   //window.alert("in setup");
   document.getElementById("srchstr").innerHTML=str;
-  document.getElementById("params").innerHTML= 
+  document.getElementById("params").value= 
   //"testing\nsecond line";
   JSON.stringify(srch,null,2);
 }
@@ -26,7 +26,7 @@ function setup()
 function extract()
 {
   //window.alert("Extract");
-  let newsrch = JSON.parse(document.getElementById("params").innerHTML)
+  let newsrch = JSON.parse(document.getElementById("params").value)
   let res = FindBracketed(str,newsrch.locate,newsrch.replace);
   document.getElementById("res").innerHTML=res;
 }
