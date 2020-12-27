@@ -1,6 +1,6 @@
 const ms=require("./mystrings")
 
-const str ="this is a test string. i'll look for test substrings in this string. latlon 32.7336006165,-117.190002441 for KSAN"
+const str ="this is a test string. i'll look for test substrings in this string. latlon 32.7336006165,-117.190002441 for KSAN";
 
 let srch = 
 {
