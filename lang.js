@@ -20,7 +20,8 @@ function setup()
   document.getElementById("srchstr").innerHTML=str;
   document.getElementById("params").value= 
   //"testing\nsecond line";
-  JSON.stringify(srch,null,2);
+  //JSON.stringify(srch,null,2);
+  JSON.stringify(srch);
 }
 
 function extract()
