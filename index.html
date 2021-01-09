@@ -5,14 +5,16 @@
 </head>
 <body onload="setup()">
 <h1>
-Language Testing (v.039)
+Language Testing 040
 </h1><br>
 Verify the FindBracketed function<br>
-<p id="srchstr"></p><br>
-<textarea id="params" rows="10" cols="50"></textarea><br>
+String to Search...<br>
+<textarea id="strtosearch" rows="10" cols="80"></textarea><br>
+<input id="searchstr" size="80"><br>
+Result...<br>
+<textarea id="extracted" rows="10" cols="80"></textarea><br>
 <form>
 <input id="run" type="button" value="Search" onclick="extract()">
-Search result: <input id="res" type="text" size="50" value="?">
 </form>
 </body>
 </html>
