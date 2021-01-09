@@ -16,24 +16,16 @@ let srch =
     ]
 }
 
-var target;
-var parameters;
-var result;
 function setup()
 {
-
-  target= document.getElementById("strtosearch").innerHTML;
-  parameters= document.getElementById("searchstr").value;
-  result= document.getElementById("extracted").value;
-
-  target=str;
-  parameters=JSON.stringify(srch);
+  document.getElementById("strtosearch").innerHTML=str
+  document.getElementById("searchstr").value; =JSON.stringify(srch);
 }
 
 function extract()
 {
   //window.alert("Extract");
-  let newsrch = JSON.parse(parameters)
+  let newsrch = JSON.parse(document.getElementById("searchstr").value)
   let res = FindBracketed(str,newsrch.locate,newsrch.replace);
-  result=res;
+  document.getElementById("result").innerHTML=res;
 }
