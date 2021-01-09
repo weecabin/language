@@ -5,7 +5,7 @@
 </head>
 <body onload="setup()">
 <h1>
-Language Testing 047
+Language Testing 048
 </h1><br>
 Verify the FindBracketed function<br>
 String to Search...<br>
@@ -17,5 +17,23 @@ Result...<br>
 <form>
 <input id="run" type="button" value="Search" onclick="extract()">
 </form>
+<br>
+<p>
+
+locate:
+multidimensional array of search parameters...
+[2,"string"],
+[1,"the "],
+[1," will"]
+will find in succession, the 2nd occurance of "string"
+then the first occurance of "the "
+then the frst occursnce of " will"
+it will return the string bracketed by the last two search parameters
+
+replace:
+a multidimensional array of replace parameters...
+[" ",""]
+will remove all spaces
+</p>
 </body>
 </html>
