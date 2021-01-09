@@ -16,9 +16,9 @@ let srch =
     ]
 }
 
-const target;
-const parameters;
-const result;
+var target;
+var parameters;
+var result;
 function setup()
 {
 
