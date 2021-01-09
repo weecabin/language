@@ -27,5 +27,5 @@ function extract()
   //window.alert("Extract");
   let newsrch = JSON.parse(document.getElementById("searchstr").value)
   let res = FindBracketed(str,newsrch.locate,newsrch.replace);
-  document.getElementById("result").innerHTML=res;
+  document.getElementById("extracted").innerHTML=res;
 }
