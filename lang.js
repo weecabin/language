@@ -15,12 +15,17 @@ let srch =
       [" ",""]
     ]
 }
-const target= document.getElementById("strtosearch").innerHTML;
-const parameters= document.getElementById("searchstr").value;
-const result= document.getElementById("extracted").value;
+
+const target;
+const parameters;
+const result;
 function setup()
 {
-  //window.alert("in setup");
+
+  target= document.getElementById("strtosearch").innerHTML;
+  parameters= document.getElementById("searchstr").value;
+  result= document.getElementById("extracted").value;
+
   target=str;
   parameters=JSON.stringify(srch);
 }
