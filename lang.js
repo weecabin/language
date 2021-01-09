@@ -15,21 +15,20 @@ let srch =
       [" ",""]
     ]
 }
-
+const target= document.getElementById("strtosearch").innerHTML;
+const parameters= document.getElementById("searchstr").value;
+const result= document.getElementById("extracted").value;
 function setup()
 {
   //window.alert("in setup");
-  document.getElementById("strtosearch").innerHTML=str;
-  document.getElementById("searchstr").value= 
-  //"testing\nsecond line";
-  //JSON.stringify(srch,null,2);
-  JSON.stringify(srch);
+  target=str;
+  parameters=JSON.stringify(srch);
 }
 
 function extract()
 {
   //window.alert("Extract");
-  let newsrch = JSON.parse(document.getElementById("searchstr").value)
+  let newsrch = JSON.parse(parameters)
   let res = FindBracketed(str,newsrch.locate,newsrch.replace);
-  document.getElementById("extracted").value=res;
+  result=res;
 }
