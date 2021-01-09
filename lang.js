@@ -19,7 +19,7 @@ let srch =
 function setup()
 {
   document.getElementById("strtosearch").innerHTML=str
-  document.getElementById("searchstr").value; =JSON.stringify(srch);
+  document.getElementById("searchstr").value=JSON.stringify(srch);
 }
 
 function extract()
