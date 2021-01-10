@@ -18,7 +18,7 @@ let srch =
 
 function setup()
 {
-  document.getElementById("strtosearch").innerHTML=str
+  document.getElementById("strtosearch").value=str
   document.getElementById("searchstr").value=JSON.stringify(srch);
 }
 
@@ -26,7 +26,7 @@ function extract()
 {
   //window.alert("Extract");
   let newsrch = JSON.parse(document.getElementById("searchstr").value)
-  strtosearch= document.getElementById("strtosearch").innerHTML;
+  strtosearch= document.getElementById("strtosearch").value;
   let res = FindBracketed(strtosearch,newsrch.locate,newsrch.replace);
-  document.getElementById("extracted").innerHTML=res;
+  document.getElementById("extracted").value=res;
 }
